@@ -39,6 +39,8 @@ function mapDispatchToProps(dispatch) {
 
 export const WrapperApp = connect(mapStateToProps, mapDispatchToProps)(App)
 // export default connect(mapStateToProps, mapDispatchToProps)(App)
+
+
 // import React, { Component } from 'react';
 // import {Navbar} from 'react-bootstrap'
 //
