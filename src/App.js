@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Navbar} from 'react-bootstrap'
 
+import CatList from './CatList'
+
 class App extends Component {
 
   render() {
