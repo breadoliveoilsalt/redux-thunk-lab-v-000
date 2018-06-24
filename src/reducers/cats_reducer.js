@@ -1,16 +1,28 @@
+export default function catsReducer(state= {loading: false, pictures: []}, action) {
+  switch ( action.type ) {
+    case 'LOADING_CATS':
+      return Object.assign({}, state, {loading: true})
+    case 'FETCH_CATS':
+      return {loading: false, pictures: action.payload}
+    default:
+      return state;
+  }
+
+}
+
 
 // Blank at start of lab.  I added:
-
-const catsReducer = (state = [], action) => {
-  switch (action.type) {
-
-    case 'FETCH_CATS':
-      return action.cats
-
-    default:
-      return state
-  }
-}
+// Why does lesson say only one action needed, yet solution has two???
+// const catsReducer = (state = [], action) => {
+//   switch (action.type) {
+//
+//     case 'FETCH_CATS':
+//       return action.cats
+//
+//     default:
+//       return state
+//   }
+// }
 
 export default catsReducer
 
