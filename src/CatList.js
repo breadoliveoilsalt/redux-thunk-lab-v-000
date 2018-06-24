@@ -1,7 +1,35 @@
-const CatList = (props) => {
-  let pics = props.catList.map((catPic, index) => <img src={catPic.url} />)
 
-  render() {
-    return pics
+import React from 'react'
+
+const CatList = (props) => {
+  function listCats() {
+    return props.catPics.map(catPic => {
+      return (
+        <div className="col-lg-12">
+          <div className="col-lg-6 col-lg-offset-3 well">
+            <img src={catPic.url} className="thumbnail responsive" style={{height: '220px', width: '221px', margin: 'auto'}}/>
+          </div>
+        </div>
+      )
+    })
   }
+  return (
+    <div>
+      {listCats()}
+    </div>
+  )
 }
+
+export default CatList
+
+// My attempt:
+// const CatList = (props) => {
+//   let pics = props.catList.map((catPic, index) => <img src={catPic.url} />)
+//
+//   // No render when you do the short form component
+//   // render() {
+//
+//     return (
+//       <div> {pics} </div>
+//   )
+// }

@@ -20,7 +20,7 @@ class App extends Component {
   }
 }
 
-mapStateToProps = (state) => {
+function mapStateToProps(state) {
   return {
     catPics: state.cats.pictures
   }
