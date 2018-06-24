@@ -3,6 +3,8 @@ import {Navbar} from 'react-bootstrap'
 
 import CatList from './CatList'
 
+import {connect} from 'react-redux'
+
 class App extends Component {
 
   render() {
