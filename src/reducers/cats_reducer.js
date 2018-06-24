@@ -1,0 +1,39 @@
+
+// Blank at start of lab.  I added:
+
+const catsReducer = (state = [], action) => {
+  switch (action.type) {
+
+    case 'FETCH_CATS':
+      return action.cats
+
+    default:
+      return state
+  }
+}
+
+export default catsReducer
+
+// const todos = (state = [], action) => {
+//   switch (action.type) {
+//     case 'ADD_TODO':
+//       return [
+//         ...state,
+//         {
+//           id: action.id,
+//           text: action.text,
+//           completed: false
+//         }
+//       ]
+//     case 'TOGGLE_TODO':
+//       return state.map(todo =>
+//         (todo.id === action.id)
+//           ? {...todo, completed: !todo.completed}
+//           : todo
+//       )
+//     default:
+//       return state
+//   }
+// }
+// ​
+// export default todos
