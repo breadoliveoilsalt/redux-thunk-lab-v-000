@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {Navbar} from 'react-bootstrap'
 
-class App extends Component {   
-  
+class App extends Component {
+
   render() {
     return (
       <div className="App">
@@ -18,7 +18,11 @@ class App extends Component {
   }
 }
 
+mapStateToProps = (state) => {
+  return {
+    catPics: state.cats.pictures
+  }
+}
 
 
-export default App
-
+export default connect(mapStateToProps)(App)

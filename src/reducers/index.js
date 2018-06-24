@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import catsReducer from './cats_reducer';
 
-
+// I like this formulation of explicitly defining rootReducer:
 const rootReducer =  combineReducers({
   cats: catsReducer
 });

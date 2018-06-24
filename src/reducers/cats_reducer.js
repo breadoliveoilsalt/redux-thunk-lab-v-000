@@ -24,7 +24,7 @@ export default function catsReducer(state= {loading: false, pictures: []}, actio
 //   }
 // }
 
-export default catsReducer
+// export default catsReducer
 
 // const todos = (state = [], action) => {
 //   switch (action.type) {
